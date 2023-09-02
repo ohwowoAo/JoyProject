@@ -4,6 +4,7 @@
 
 - 기술 스택 :
 
+```
 - zod : 스키마 선언 및 유효성 검사 라이브러리로 typeScript의 한계를 보완했다는 특징떄문에 최근 개발자들로 부터 많은 인기를 끌고 있다. 또한, react-hook-form과의 합이 좋다는 평이 있어서 적용하게 되었다.
   참고 사이트 : https://zod.dev/
 
@@ -14,3 +15,4 @@
   참고 사이트 : https://react-hook-form.com/get-started
 
 - react-select : react-hook-form을 적용하다 알게 됐는데, selectBox에 쓰는 거의 모든 기능을 쉽게 구현할 수 있다는 장점이 있어 함께 적용하게 되었다. 자동으로 handler 검색기능도 제공해 매우 편리하게 사용할 수 있을 것 같다.
+```
