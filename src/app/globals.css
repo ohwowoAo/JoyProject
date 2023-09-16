@@ -17,11 +17,87 @@
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb));
+  /*color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb)); */
+    rgb(var(--background-start-rgb));*/
+}
+.multiline-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  overflow: hidden;
+}
+.selectedTab::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: calc(100% + 26px);
+  background: #ffe579;
+  left: -13px;
+  bottom: -12px;
+}
+.slick-prev:before {
+  content: "" !important;
+}
+.slick-next:before {
+  content: "" !important;
+}
+.slick-prev {
+  background-image: url(https://holaworld.io/images/info/left-arrow-button.png) !important;
+  background-size: 100% !important;
+  width: 30px !important;
+  height: 30px !important;
+  left: auto !important;
+  right: 35px !important;
+  top: -35px !important;
+}
+
+.slick-next {
+  background-image: url(https://holaworld.io/images/info/right-arrow-button.png) !important;
+  background-size: 100% !important;
+  width: 30px !important;
+  height: 30px !important;
+  right: 0 !important;
+  top: -35px !important;
+}
+.hotTopicWrap .slick-list {
+  margin-right: -1.5rem;
+}
+
+.hotTopicWrap .slick-slide {
+  padding-right: 1.5rem;
+}
+@keyframes loadingSpinner_rotateImage__2_yFZ {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.loadingIcon {
+  -webkit-animation: loadingSpinner_rotateImage__2_yFZ 1.2s linear infinite;
+  animation: loadingSpinner_rotateImage__2_yFZ 1.2s linear infinite;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
